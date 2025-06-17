@@ -1,0 +1,19 @@
+!!!PLACE ALL POSTS IN _posts FOLDER!!!
+to make a post, format file like:
+
+yyyy-mm-dd-(title-with-dashes).md
+
+then for the contents of the file use this EXACT format:
+
+--- *** DO NOT FORGET THESE DASHES AT THE TOP AND BOTTOM ***
+layout: post 
+title: ANY TITLE
+date: yyyy-mm-dd
+---
+[ANYTHING YOU WANT TO WRITE HERE]
+
+if you want to embed an image/picture:
+
+![placeholder text, can be anything ](/assets/images/imagename.filetype)
+
+*** MAKE SURE YOU PUT THE IMAGE YOU WANT TO USE IN THE IMAGES FOLDER WITH THE EXACT FILENAME ***
