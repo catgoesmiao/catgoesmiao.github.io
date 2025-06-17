@@ -1,12 +1,7 @@
-theme: jekyll-theme-minimal
 title: Tachyon Chasing Logs
-description: For all the pets of the world, and all whose beck and call they heed.
-
+years: [2025, 2024, 2023]  # Update with your actual years
 defaults:
   - scope:
       path: ""
-      type: years
     values:
-      layout: year
-
-years: [2025] # Add all years you have posts for
+      layout: default
