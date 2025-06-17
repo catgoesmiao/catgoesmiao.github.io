@@ -1,4 +1,8 @@
 title: Tachyon Chasing Logs
+theme: minima
+plugins:
+  - jekyll-feed
+  
 years: [2025]  # Update with actual years
 defaults:
   - scope:
