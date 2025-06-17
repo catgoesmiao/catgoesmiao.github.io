@@ -1,5 +1,5 @@
 title: Tachyon Chasing Logs
-years: [2025, 2024, 2023]  # Update with your actual years
+years: [2025]  # Update with your actual years
 defaults:
   - scope:
       path: ""
