@@ -1,19 +1,19 @@
 body {
-  color: #0000ff; /* Pure blue */
+  color: #0000ff;
   text-transform: lowercase;
-  position: relative; /* Needed for fixed back button */
-  padding-bottom: 40px; /* Space for the button */
-  min-height: 100vh; /* Ensure full viewport height */
+  position: relative; /* for fixed back button */
+  padding-bottom: 40px; /* space for the button */
+  min-height: 100vh; /* full viewport height */
 }
 
-/* Make sure links stay visible */
+/* links stay visible */
 a {
-  color: #0033aa; /* Slightly darker blue for links */
+  color: #0033aa; /* slightly darker blue for links */
   text-decoration: none;
 }
 
 h1, h2, h3 {
-  color: #2255dd; /* Different blue for headings */
+  color: #2255dd; /* different blue for headings */
 }
 
 .container {
@@ -40,7 +40,7 @@ h1, h2, h3 {
   font-size: 0.9em;
 }
 
-/* Fix for first letters after punctuation */
+/* fix for first letters after punctuation */
 p:first-letter,
 li:first-letter,
 h1:first-letter,
@@ -49,7 +49,7 @@ h3:first-letter {
   text-transform: lowercase !important;
 }
 
-/* Back Button at Bottom */
+/* back button at bottom */
 .back-button-bottom {
   position: fixed;
   bottom: 10px;
@@ -68,7 +68,7 @@ h3:first-letter {
   background: #0033aa;
 }
 
-/* Contact Section */
+/* contact section */
 .contact-section {
   margin-top: 50px;
   padding: 20px;
