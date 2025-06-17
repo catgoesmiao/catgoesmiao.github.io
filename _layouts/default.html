@@ -7,7 +7,6 @@
 <body>
   <div class="container">
     <div class="sidebar">
-      <a href="javascript:history.back()" class="back-button">back</a> <!-- Added here -->
       <h3>archive by year</h3>
       <ul>
         {% assign years = "" | split: "," %}
@@ -28,5 +27,8 @@
       {{ content }}
     </div>
   </div>
+  
+  <!-- Back Button at Bottom -->
+  <a href="javascript:history.back()" class="back-button-bottom">back</a>
 </body>
 </html>
