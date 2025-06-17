@@ -67,3 +67,33 @@ h3:first-letter {
 .back-button-bottom:hover {
   background: #0033aa;
 }
+
+/* Contact Button (Top-Right) */
+.contact-button {
+  position: fixed;
+  top: 15px;
+  right: 15px;
+  background: #0000ff;
+  color: white;
+  padding: 5px 15px;
+  border-radius: 20px;
+  text-decoration: none;
+  z-index: 100;
+  font-size: 14px;
+}
+
+.contact-button:hover {
+  background: #0033aa;
+}
+
+/* Contact Section */
+.contact-section {
+  margin-top: 50px;
+  padding: 20px;
+  border-top: 1px solid #eee;
+}
+
+/* Adjust container to account for fixed buttons */
+.container {
+  padding-top: 40px; /* Space for contact button */
+}
