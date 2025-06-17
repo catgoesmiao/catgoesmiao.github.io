@@ -5,6 +5,9 @@
   <link rel="stylesheet" href="/assets/css/styles.css">
 </head>
 <body>
+  <!-- New Contact Button (top-right) -->
+  <a href="#contact" class="contact-button">contact us</a>
+  
   <div class="container">
     <div class="sidebar">
       <h3>archive by year</h3>
@@ -25,10 +28,15 @@
     
     <div class="content">
       {{ content }}
+      
+      <!-- Contact Section (added at bottom of content) -->
+      <section id="contact" class="contact-section">
+        <h2>contact us</h2>
+        <p>email: <a href="mailto:tachyonchasing@gmail.com">tachyonchasing@gmail.com</a></p>
+      </section>
     </div>
   </div>
   
-  <!-- Back Button at Bottom -->
   <a href="javascript:history.back()" class="back-button-bottom">back</a>
 </body>
 </html>
