@@ -1,7 +1,12 @@
 title: Tachyon Chasing Logs
-years: [2025]  # Update with your actual years
+years: [2025]  # Update with actual years
 defaults:
   - scope:
       path: ""
     values:
       layout: default
+      
+collections:
+  years:
+    output: true
+    permalink: /:path/
