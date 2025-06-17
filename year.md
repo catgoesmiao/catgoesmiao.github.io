@@ -1,0 +1,18 @@
+---
+layout: default
+title: Posts from {year}
+---
+
+<h1>posts from {{ page.year }}</h1>
+
+<ul>
+  {% for post in site.posts %}
+    {% assign post_year = post.date | date: "%Y" %}
+    {% if post_year == page.year %}
+      <li>
+        <a href="{{ post.url }}">{{ post.title | downcase }}</a>
+        - {{ post.date | date: "%b %d" }}
+      </li>
+    {% endif %}
+  {% endfor %}
+</ul>
