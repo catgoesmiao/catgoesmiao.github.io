@@ -2,6 +2,7 @@
 layout: default
 title: All Posts
 ---
+
 <h1>All Posts</h1>
 <ul>
   {% for post in site.posts %}
