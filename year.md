@@ -5,7 +5,7 @@ layout: default
 <h1>posts from {{ page.year }}</h1>
 
 <ul>
-  {% assign filtered_posts = site.posts | where_exp: "post", "post.date | date: '%Y' == page.year" %}
+  {% assign filtered_posts = site.posts | where_exp: "post", "post.date contains page.year" %}
   
   {% if filtered_posts.size > 0 %}
     {% for post in filtered_posts %}
