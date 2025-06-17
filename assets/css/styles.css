@@ -21,3 +21,23 @@
   color: #666;
   font-size: 0.9em;
 }
+
+/* Makes ALL text lowercase */
+body {
+  text-transform: lowercase;
+}
+
+/* Fix for first letters after punctuation */
+p:first-letter,
+li:first-letter,
+h1:first-letter,
+h2:first-letter,
+h3:first-letter {
+  text-transform: lowercase !important;
+}
+
+/* Makes links look normal (but still lowercase) */
+a {
+  text-decoration: none;
+  color: inherit;
+}
