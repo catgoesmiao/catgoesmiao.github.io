@@ -1,10 +1,15 @@
 body {
   color: #0000ff; /* Pure blue */
+  text-transform: lowercase;
+  position: relative; /* Needed for fixed back button */
+  padding-bottom: 40px; /* Space for the button */
+  min-height: 100vh; /* Ensure full viewport height */
 }
 
 /* Make sure links stay visible */
 a {
   color: #0033aa; /* Slightly darker blue for links */
+  text-decoration: none;
 }
 
 h1, h2, h3 {
@@ -35,11 +40,6 @@ h1, h2, h3 {
   font-size: 0.9em;
 }
 
-/* Makes ALL text lowercase */
-body {
-  text-transform: lowercase;
-}
-
 /* Fix for first letters after punctuation */
 p:first-letter,
 li:first-letter,
@@ -49,8 +49,21 @@ h3:first-letter {
   text-transform: lowercase !important;
 }
 
-/* Makes links look normal (but still lowercase) */
-a {
-  text-decoration: none;
-  color: inherit;
+/* Back Button at Bottom */
+.back-button-bottom {
+  position: fixed;
+  bottom: 10px;
+  left: 50%;
+  transform: translateX(-50%);
+  background: #0000ff;
+  color: white;
+  padding: 5px 15px;
+  border-radius: 20px;
+  text-transform: lowercase;
+  font-size: 14px;
+  z-index: 100;
+}
+
+.back-button-bottom:hover {
+  background: #0033aa;
 }
