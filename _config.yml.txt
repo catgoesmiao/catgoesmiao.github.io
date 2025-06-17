@@ -1,4 +1,0 @@
-config.yml
-
-name: Tachyon Chasing Logs
-theme: minima
