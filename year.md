@@ -1,18 +1,20 @@
 ---
 layout: default
-title: Posts from {year}
 ---
 
 <h1>posts from {{ page.year }}</h1>
 
 <ul>
-  {% for post in site.posts %}
-    {% assign post_year = post.date | date: "%Y" %}
-    {% if post_year == page.year %}
+  {% assign filtered_posts = site.posts | where_exp: "post", "post.date | date: '%Y' == page.year" %}
+  
+  {% if filtered_posts.size > 0 %}
+    {% for post in filtered_posts %}
       <li>
-        <a href="{{ post.url }}">{{ post.title | downcase }}</a>
-        - {{ post.date | date: "%b %d" }}
+        <a href="{{ post.url | relative_url }}">{{ post.title | downcase }}</a>
+        <span class="date">- {{ post.date | date: "%b %d" }}</span>
       </li>
-    {% endif %}
-  {% endfor %}
+    {% endfor %}
+  {% else %}
+    <p>no posts found for {{ page.year }}. check back later!</p>
+  {% endif %}
 </ul>
