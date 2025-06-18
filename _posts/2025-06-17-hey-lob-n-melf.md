@@ -1,6 +1,6 @@
 ---
 layout: post
-title: lobster&melfi ref sheet drafts 01
+title: "[AMB] lobster&melfi ref sheet drafts 01"
 date: 2025-06-17
 ---
 
@@ -17,4 +17,5 @@ rest in power lobster.
   <figcaption>wow its melfi</figcaption>
 </figure>
 
+-amberjack
 ---
