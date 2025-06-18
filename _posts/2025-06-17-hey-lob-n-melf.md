@@ -5,14 +5,16 @@ date: 2025-06-17
 ---
 
 introducing lobster&melfi together! they were really fun to draw... but thinking about how the real lobster just died...  
-rest in power lobster.  
+rest in power lobster.
 
 <figure style="text-align:center">
-  <img src="/assets/images/lob_sheet.png" alt=lobber" width="100%">
+  <img src="{{ site.baseurl }}/assets/images/lob_sheet.png" alt="lobster reference sheet" style="max-width:100%">
   <figcaption>wow its lobster</figcaption>
 </figure>
 
 <figure style="text-align:center">
-  <img src="/assets/images/meppy_sheet.png" alt=meppy" width="100%">
+  <img src="{{ site.baseurl }}/assets/images/meppy_sheet.png" alt="melfi reference sheet" style="max-width:100%">
   <figcaption>wow its melfi</figcaption>
 </figure>
+
+---
