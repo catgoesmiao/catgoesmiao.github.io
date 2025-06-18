@@ -1,6 +1,6 @@
 ---
 layout: post 
-title: [YLW] running around
+title: "[YLW] running around"
 date: 2025-06-17
 ---
 im running around... all over the place... trying to chase tachy things  
