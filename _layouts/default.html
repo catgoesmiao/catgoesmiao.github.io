@@ -70,6 +70,7 @@
   <a href="javascript:history.back()" class="back-button-bottom">back</a>
   
   <!-- project description -->
+  {% if page.url == "/" %}
   <div class="project-description" style="
     position: fixed;
     bottom: 20px;
@@ -86,8 +87,7 @@
     <h3 style="margin-top: 0">project description</h3>
     <p>we have something to say but its not ready yet...</p>
   </div>
+  {% endif %}
   
-</body>
-</html>
 </body>
 </html>
