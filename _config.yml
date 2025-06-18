@@ -3,6 +3,7 @@ theme: minima
 plugins:
   - jekyll-feed
 default_image: /assets/images/preview.png
+future: true
   
 years: [2025]  # Update with actual years
 defaults:
