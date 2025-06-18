@@ -5,7 +5,7 @@ plugins:
 default_image: /assets/images/preview.png
 future: true
   
-years: [2025]  # Update with actual years
+years: [2025]  # update with actual years
 defaults:
   - scope:
       path: ""
