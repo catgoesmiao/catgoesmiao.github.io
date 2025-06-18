@@ -1,8 +1,28 @@
 <!DOCTYPE html>
 <html>
 <head>
+  
   <title>{{ page.title }} | {{ site.title }}</title>
   <link rel="stylesheet" href="/assets/css/styles.css">
+  
+  <!-- previews -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>{% if page.title %}{{ page.title }} | {% endif %}{{ site.title }}</title>
+  <meta name="description" content="{% if page.description %}{{ page.description }}{% else %}{{ site.description }}{% endif %}">
+  <meta property="og:title" content="{% if page.title %}{{ page.title }}{% else %}{{ site.title }}{% endif %}">
+  <meta property="og:description" content="{% if page.description %}{{ page.description }}{% else %}{{ site.description }}{% endif %}">
+  <meta property="og:url" content="{{ site.url }}{{ page.url | replace:'index.html','' }}">
+  <meta property="og:type" content="website">
+  <meta property="og:image" content="{{ site.url }}{% if page.image %}{{ page.image }}{% else %}{{ site.default_image }}{% endif %}">
+  <meta property="og:site_name" content="{{ site.title }}">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="{% if page.title %}{{ page.title }}{% else %}{{ site.title }}{% endif %}">
+  <meta name="twitter:description" content="{% if page.description %}{{ page.description }}{% else %}{{ site.description }}{% endif %}">
+  <meta name="twitter:image" content="{{ site.url }}{% if page.image %}{{ page.image }}{% else %}{{ site.default_image }}{% endif %}">
+  {% if site.twitter_username %}
+  <meta name="twitter:site" content="@{{ site.twitter_username }}">
+  {% endif %}
 </head>
 <body>
   
