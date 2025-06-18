@@ -6,13 +6,19 @@ permalink: /archive/
 
 <h1>all posts</h1>
 <ul>
-## By Year
+## by Year
 
 - [all years](/blog)
 - [2025](/blog/#2025)
-- [2024](/blog/#2024)
-- [2023](/blog/#2023)
-- [2022](/blog/#2022)
-- [2021](/blog/#2021)
-- [2020](/blog/#2020)
+  
+ <div id="2025">
+## 2025 posts
+{% assign posts_2025 = site.posts | where_exp: "post", "post.date contains '2025'" %}
+{% for post in posts_2025 %}
+- [{{ post.title }}]({{ post.url }}) - {{ post.date | date: "%b %d, %Y" }}
+{% else %}
+empty...
+{% endfor %}
+</div>
+
 </ul>
