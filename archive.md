@@ -6,11 +6,7 @@ permalink: /archive/
 
 <h1>all posts</h1>
 <ul>
-## by Year
 
-- [all years](/blog)
-- [2025](/blog/#2025)
-  
  <div id="2025">
 ## 2025 posts
 {% assign posts_2025 = site.posts | where_exp: "post", "post.date contains '2025'" %}
