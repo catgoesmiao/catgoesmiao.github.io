@@ -6,20 +6,22 @@ permalink: /archive/
 
 <h1>all posts</h1>
 <ul>
-{% assign currentYear = site.time | date: '%Y' | plus: 0 %}
-{% assign maxYear = currentYear | plus: 1 %}
+## by year
 
-{% for year in (2020..maxYear) reversed %}
-  {% assign yearHasPosts = false %}
+{% assign current_year = site.time | date: '%Y' | plus: 0 %}
+{% assign max_year = current_year | plus: 1 %}
+
+{% for year in (2020..max_year) reversed %}
+  {% assign year_has_posts = false %}
   {% for post in site.posts %}
-    {% assign postYear = post.date | date: '%Y' | plus: 0 %}
-    {% if postYear == year %}
-      {% assign yearHasPosts = true %}
+    {% assign post_year = post.date | date: '%Y' | plus: 0 %}
+    {% if post_year == year %}
+      {% assign year_has_posts = true %}
     {% endif %}
   {% endfor %}
   
-  {% if yearHasPosts or year == 2025 %}
-    <li><a href="/blog/{{ year }}">{{ year }}</a></li>
+  {% if year_has_posts or year == 2025 %}
+- [{{ year }}](/blog/{{ year }})
   {% endif %}
 {% endfor %}
 </ul>
