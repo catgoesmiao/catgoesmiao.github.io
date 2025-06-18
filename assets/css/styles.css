@@ -75,7 +75,7 @@ h3:first-letter {
   border-top: 1px solid #eee;
 }
 
-/* Adjust container to account for fixed buttons */
+/* adjust container to account for fixed buttons */
 .container {
-  padding-top: 40px; /* Space for contact button */
+  padding-top: 40px;
 }
