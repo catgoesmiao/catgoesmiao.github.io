@@ -3,4 +3,4 @@ layout: post
 title: hey peanut
 date: 2025-06-17
 ---
-hey peanut it's me!
+hey peanut its me!
