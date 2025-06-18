@@ -1,6 +1,6 @@
 --- 
 layout: post 
-title: "hi im yellowtail'
+title: "hi im yellowtail"
 date: 2025-06-16
 ---
 hello world!  
