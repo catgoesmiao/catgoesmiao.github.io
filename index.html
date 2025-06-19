@@ -7,6 +7,35 @@ title: just landed
   <h1>tachyon chasing logs</h1>
   <p>for all the pets of the world, and all whose beck and call they heed.</p>
   
+  <div class="pinned-posts">
+  <h3>pinned posts</h3>
+  <ul>
+    {% for post_url in site.pinned_posts %}
+      {% assign pinned_post = site.posts | where: "url", post_url | first %}
+      {% if pinned_post %}
+        <li><a href="{{ pinned_post.url }}">{{ pinned_post.title }}</a></li>
+      {% endif %}
+    {% endfor %}
+  </ul>
+</div>
+
+<style>
+.pinned-posts {
+  margin-bottom: 1.5rem;
+  padding: 0.8rem;
+  background: #f8f8f8;
+  border-radius: 5px;
+  border-left: 3px solid #ffcc00;
+}
+.pinned-posts h3 {
+  margin-top: 0;
+  font-size: 1.1em;
+}
+.pinned-posts ul {
+  padding-left: 1.2rem;
+  margin-bottom: 0;
+}
+</style>
   <h2>recent posts</h2>
   <ul class="posts">
     {% for post in site.posts limit:5 %}
