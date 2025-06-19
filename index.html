@@ -10,27 +10,19 @@ title: just landed
   <div class="pinned-posts">
     <h3 style="color: #0000ff;">pinned posts</h3>
     <ul style="color: #0000ff;">
-      
-        {% for post_path in site.pinned_posts %}
-          {% assign post_slug = post_path | remove_first: '/' | split: '/' | last %}
-          {% assign pinned_post = site.posts | where_exp: "post", "post.url contains post_slug" | first %}
-          
-          {% if pinned_post %}
-            <li><a href="{{ pinned_post.url }}">{{ pinned_post.title }}</a></li>
-          {% else %}
-            <li class="debug" style="color: #ff0000; font-family: monospace;">
-              not found: {{ post_path }} (looking for: '{{ post_slug }}')
-            </li>
-          {% endif %}
-        {% endfor %}
-      </ul>
-    {% else %}
-      <p style="color: #666;">no pinned posts configured. add to _config.yml:</p>
-      <pre style="background: #f0f0f0; padding: 10px;">
-pinned_posts:
-  - /2025/06/16/hi-im-amberjack/
-  - /2025/06/16/hi-im-yellowtail/</pre>
-    {% endif %}
+      {% for post_path in site.pinned_posts %}
+        {% assign post_slug = post_path | remove_first: '/' | split: '/' | last %}
+        {% assign pinned_post = site.posts | where_exp: "post", "post.url contains post_slug" | first %}
+        
+        {% if pinned_post %}
+          <li><a href="{{ pinned_post.url }}">{{ pinned_post.title }}</a></li>
+        {% else %}
+          <li class="debug" style="color: #ff0000; font-family: monospace;">
+            not found: {{ post_path }} (looking for: '{{ post_slug }}')
+          </li>
+        {% endif %}
+      {% endfor %}
+    </ul>
   </div>
 
   <style>
