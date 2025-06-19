@@ -8,7 +8,7 @@ title: just landed
   <p>for all the pets of the world, and all whose beck and call they heed.</p>
   
   <div class="pinned-posts">
-    <h3>📌 pinned posts</h3>
+    <h3>pinned posts</h3>
     {% if site.pinned_posts %}
       <ul>
         {% for post_path in site.pinned_posts %}
@@ -19,13 +19,13 @@ title: just landed
             <li><a href="{{ pinned_post.url }}">{{ pinned_post.title }}</a></li>
           {% else %}
             <li class="debug" style="color: #ff0000; font-family: monospace;">
-              Not found: {{ post_path }} (Looking for: '{{ post_slug }}')
+              not found: {{ post_path }} (looking for: '{{ post_slug }}')
             </li>
           {% endif %}
         {% endfor %}
       </ul>
     {% else %}
-      <p style="color: #666;">No pinned posts configured. Add to _config.yml:</p>
+      <p style="color: #666;">no pinned posts configured. add to _config.yml:</p>
       <pre style="background: #f0f0f0; padding: 10px;">
 pinned_posts:
   - /2025/06/16/hi-im-amberjack/
