@@ -4,6 +4,9 @@ plugins:
   - jekyll-feed
 default_image: /assets/images/preview.png
 future: true
+pinned_posts:
+  - "/2025/06/16/hi-im-amberjack"
+  - "/2025/06/16/hi-im-yellowtail"
   
 years: [2025]  # update with actual years
 defaults:
