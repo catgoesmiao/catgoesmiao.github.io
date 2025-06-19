@@ -8,9 +8,9 @@ title: just landed
   <p>for all the pets of the world, and all whose beck and call they heed.</p>
   
   <div class="pinned-posts">
-    <h3>pinned posts</h3>
-    {% if site.pinned_posts %}
-      <ul>
+    <h3 style="color: #0000ff;">pinned posts</h3>
+    <ul style="color: #0000ff;">
+      
         {% for post_path in site.pinned_posts %}
           {% assign post_slug = post_path | remove_first: '/' | split: '/' | last %}
           {% assign pinned_post = site.posts | where_exp: "post", "post.url contains post_slug" | first %}
