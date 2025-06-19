@@ -8,32 +8,50 @@ title: just landed
   <p>for all the pets of the world, and all whose beck and call they heed.</p>
   
   <div class="pinned-posts">
-    <h3>pinned posts</h3>
-    <ul>
-      {% for post_url in site.pinned_posts %}
-        {% assign pinned_post = site.posts | where: "url", post_url | first %}
-        {% if pinned_post %}
-          <li><a href="{{ pinned_post.url }}">{{ pinned_post.title }}</a></li>
-        {% endif %}
-      {% endfor %}
-    </ul>
+    <h3>📌 pinned posts</h3>
+    {% if site.pinned_posts %}
+      <ul>
+        {% for post_path in site.pinned_posts %}
+          {% assign post_slug = post_path | remove_first: '/' | split: '/' | last %}
+          {% assign pinned_post = site.posts | where_exp: "post", "post.url contains post_slug" | first %}
+          
+          {% if pinned_post %}
+            <li><a href="{{ pinned_post.url }}">{{ pinned_post.title }}</a></li>
+          {% else %}
+            <li class="debug" style="color: #ff0000; font-family: monospace;">
+              Not found: {{ post_path }} (Looking for: '{{ post_slug }}')
+            </li>
+          {% endif %}
+        {% endfor %}
+      </ul>
+    {% else %}
+      <p style="color: #666;">No pinned posts configured. Add to _config.yml:</p>
+      <pre style="background: #f0f0f0; padding: 10px;">
+pinned_posts:
+  - /2025/06/16/hi-im-amberjack/
+  - /2025/06/16/hi-im-yellowtail/</pre>
+    {% endif %}
   </div>
 
   <style>
     .pinned-posts {
       margin-bottom: 1.5rem;
-      padding: 0.8rem;
+      padding: 1rem;
       background: #f8f8f8;
       border-radius: 5px;
-      border-left: 3px solid #0000ff;
+      border-left: 4px solid #0000ff;
     }
     .pinned-posts h3 {
       margin-top: 0;
       font-size: 1.1em;
+      color: #333;
     }
     .pinned-posts ul {
-      padding-left: 1.2rem;
-      margin-bottom: 0;
+      padding-left: 1.5rem;
+      margin: 0.5rem 0 0 0;
+    }
+    .debug {
+      font-size: 0.9em;
     }
   </style>
 
