@@ -13,4 +13,5 @@ i have spent some TIME making sense of this painting
 motif of arrows. of renouncers.  
 see to it that my heart will belong to this craft- as the spider is to the web, as the bee is to the hive  
 with stimulant adulterated conviction,  
+
 -yellowtail
