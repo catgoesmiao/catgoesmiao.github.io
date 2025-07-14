@@ -8,7 +8,7 @@ hello all it has been a while... right now, i have been working on some sprites 
 the harvest is sure to be fruitful. anyways, i will drop a prototype of the prologue ui down here!  
 its melfi!
 ![hey its melfi!](/assets/images/ui_example.jpg)  
-my goal for these next few weeks is to get most of melfis sprites at least drafted...
+my goal for these next few weeks is to get most of melfis sprites at least drafted...  
 love,
 
 -amberjack
