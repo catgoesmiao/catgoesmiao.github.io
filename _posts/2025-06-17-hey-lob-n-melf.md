@@ -9,12 +9,12 @@ rest in power lobster.
 
 <figure style="text-align:center">
   <img src="{{ site.baseurl }}/assets/images/lob_sheet.png" alt="lobster reference sheet" style="max-width:100%">
-  <figcaption>wow its lobster</figcaption>
+  <figcaption>wow it's lobster</figcaption>
 </figure>
 
 <figure style="text-align:center">
   <img src="{{ site.baseurl }}/assets/images/meppy_sheet.png" alt="melfi reference sheet" style="max-width:100%">
-  <figcaption>wow its melfi</figcaption>
+  <figcaption>wow it's melfi</figcaption>
 </figure>
 
 -amberjack
