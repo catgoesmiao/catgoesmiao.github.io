@@ -29,10 +29,10 @@ nonetheless, the significance here is that i realized lately that even for a vis
 this project is almost entirely comprised of some kind of dialogue: bickering, emails, presentations, oral storytelling, negotiations, and the like.  
 most of the time, this is a story that operates in two-object systems.  
 
-Term: "Hard" Sci-Fi  
+Term: "Hard Sci-Fi"  
 i am also realizing that i have not really discussed the concept of genre. i didn't think it was important, but you might.  
 there are some rather niche scientific/academic concepts used here. the idea of limiting my audience to people familiar with genre conventions seems rather dull, though.  
-"hard scifi" is a term that some reviewers in the past have been able to immediately identify upon reading. this kind of sucks imo  
+"hard sci-fi" is a term that some reviewers in the past have been able to immediately identify upon reading. this kind of sucks imo  
 i'm considering on adding a glossary? for both made up stuff and very real concepts. entries could range from "Janus Conjecture" to "Primary Investigator" to "Superstructure."  
 i want to transcend genre, and i also want players to have a chance to learn and engage with some conecpts that are rooted in real discourses as well,  
 insted of punishing the player that doesn't know. :)  
