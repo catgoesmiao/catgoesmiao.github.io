@@ -95,6 +95,9 @@ h3:first-letter {
   opacity: 1;
 }
 
+/* ===== GET OFF THE PHONE! ===== */
 @media (max-width: 768px) {
-  .corner-image { display: none; }
+  .corner-image {
+    display: none;
+  }
 }
