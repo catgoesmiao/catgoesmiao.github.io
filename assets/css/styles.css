@@ -86,13 +86,22 @@ h3:first-letter {
   bottom: 20px;
   left: 20px;
   z-index: 9999;
-  opacity: 0;
-  visibility: hidden;
   width: 100px;
-  transition: opacity 0.3s ease-in-out, visibility 0.3s;
+  
+  /* FORCE HIDDEN */
+  opacity: 0 !important;
+  visibility: hidden !important;
+  pointer-events: none !important;
+  
+  /* TRANSITION */
+  transition: 
+    opacity 0.3s ease-in-out,
+    visibility 0.3s ease-in-out !important;
 }
 
+/* HOVER STATE */
 .corner-image:hover {
-  opacity: 1;
-  visibility: visible;
+  opacity: 1 !important;
+  visibility: visible !important;
+  pointer-events: auto !important;
 }
