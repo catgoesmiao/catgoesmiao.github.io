@@ -88,7 +88,7 @@ h3:first-letter {
   z-index: 9999;
   opacity: 0.2;         
   width: 100px;        
-  transition: opacity 0.3s ease-in-out;
+  transition: opacity 0.3s;
 
 .corner-image:hover {
   opacity: 1;
