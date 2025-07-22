@@ -18,7 +18,7 @@ Of course, none of them will get what they want…
 today i will discuss a variety of terms. i will keep going until i'm too tired. that's why it's exhaustive  
 
 Term: Reviewer's Edition  
-i recently (just now) reached a milestone in the script of this project and am rewarding (punishing) myself by consolidating my writing in a single document  
+i recently (just now) reached a milestone in the script of this project and am rewarding (punishing) myself by consolidating my writing in a single document.  
 this is partially because i was curious as to what the word count was and partially because i wanted some feedback before continuing.  
 anyways. the "reviewer's edition" of the script is 19573 words and about 60% of the length of the intended full project. i think that's a pretty expected number.  
 if you are unlucky enough to be chosen to review my writing, expect this messy, eighty page behemoth on your desk soon.  
