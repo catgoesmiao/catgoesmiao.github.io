@@ -2,7 +2,7 @@ title: tachyon chasing logs
 theme: minima
 plugins:
   - jekyll-feed
-default_image: /assets/images/preview.png?v=2
+default_image: /assets/images/preview-v2.png
 future: true
 pinned_posts:
   - "/2025/06/16/hi-im-amberjack/"
